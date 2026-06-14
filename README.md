@@ -44,7 +44,7 @@ LASTE is the system that makes low-level A-10 attacks accurate and survivable. I
 > ⚠️ The F10 LASTE menu will only appear if you are seated in an **A-10C** or **A-10C II** aircraft slot.
 #### Setting QNH
 
-<img width="872" height="778" alt="set_QNH" src="https://github.com/user-attachments/assets/fee1c4c6-ccf8-4b70-b357-22a198a648c5" />
+<img width="602" height="446" alt="set_QNH" src="https://github.com/user-attachments/assets/fee1c4c6-ccf8-4b70-b357-22a198a648c5" />
 
 
 It is important to set the QNH correctly before entering LASTE data. The QNH displayed in the script output (in inHg) must be dialled into the altimeter pressure knob — the small knob on the lower left of the altimeter. Getting this right ensures your altimeter reads true altitude, which is the foundation for accurate weapons delivery at all altitude tiers.
