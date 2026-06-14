@@ -33,7 +33,7 @@ This script pulls live in-mission weather data directly from the pilot's aircraf
 
 #### Video Guide
 [![LASTE Wind/Temp Correction - How To](https://img.youtube.com/vi/HER_i5OZXJY/0.jpg)](https://www.youtube.com/watch?v=HER_i5OZXJY)
-*Video by [Gh0st](https://www.youtube.com/@DamnedGh0st) — [Jump to CDU input guide (4:32)](https://www.youtube.com/watch?v=HER_i5OZXJY&t=272)*
+*Video by [Gh0st](https://www.youtube.com/@DamnedGh0st) — [Jump to CDU input guide at (4:32) min](https://www.youtube.com/watch?v=HER_i5OZXJY&t=272)*
 
 #### In-Game Usage
 `F10 Other` → `LASTE` → `Request LASTE Winds`
