@@ -1,4 +1,4 @@
-# DCS Lua Scripts
+# DCS Lua Scripts — CaptMikeDK
 
 A collection of DCS World server-side Lua scripts built for multiplayer missions.  
 All scripts require the [MOOSE Framework](https://github.com/FlightControl-Master/MOOSE) — download it from the link before adding any script to your mission.
@@ -9,7 +9,7 @@ All scripts require the [MOOSE Framework](https://github.com/FlightControl-Maste
 
 ### 🛩️ LASTE Wind/Temp Correction — A-10C / A-10C II
 
-In an A-10C / A-10C II Thunderbolt, LASTE stands for Low Altitude Safety and Targeting Enhancement
+![LASTE Wind/Temp Correction Data](A-10_laste.jpg)
 
 **File:** `A10_laste_Winds_MP.lua`  
 **Version:** 1.3 | 14-06-2026  
@@ -37,8 +37,6 @@ This script pulls live in-mission weather data directly from the pilot's aircraf
 #### In-Game Usage
 `F10 Other` → `LASTE` → `Request LASTE Winds`
 
-![LASTE Wind/Temp Correction Data](A-10_laste.jpg)
-
 ---
 
 ## License
@@ -64,4 +62,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
