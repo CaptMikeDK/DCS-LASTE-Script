@@ -9,7 +9,8 @@ All scripts require the [MOOSE Framework](https://github.com/FlightControl-Maste
 
 ### 🛩️ LASTE Wind/Temp Correction — A-10C / A-10C II
 
-<img width="624" height="468" alt="A-10_laste" src="https://github.com/user-attachments/assets/586f6955-1aaa-4ec1-9e4b-328644a05852" />
+<img width="602" height="446" alt="A-10_laste" src="https://github.com/user-attachments/assets/b5642088-d42a-46d1-8412-c514674ad8f0" />
+
 
 In an A-10 Thunderbolt II, LASTE stands for **Low Altitude Safety and Targeting Enhancement**.
 
@@ -41,7 +42,12 @@ LASTE is the system that makes low-level A-10 attacks accurate and survivable. I
 `F10 Other` → `LASTE` → `Request LASTE Winds`
 
 > ⚠️ The F10 LASTE menu will only appear if you are seated in an **A-10C** or **A-10C II** aircraft slot.
+#### Setting QNH
 
+<img width="872" height="778" alt="set_QNH" src="https://github.com/user-attachments/assets/fee1c4c6-ccf8-4b70-b357-22a198a648c5" />
+
+
+It is important to set the QNH correctly before entering LASTE data. The QNH displayed in the script output (in inHg) must be dialled into the altimeter pressure knob — the small knob on the lower left of the altimeter. Getting this right ensures your altimeter reads true altitude, which is the foundation for accurate weapons delivery at all altitude tiers.
 
 ## License
 
