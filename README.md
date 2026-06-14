@@ -17,8 +17,6 @@ LASTE is the system that makes low-level A-10 attacks accurate and survivable. I
 
 * This script pulls live in-mission weather data directly from the pilot's aircraft position and formats it ready to type straight into the CDU scratchpad — no math, no conversion needed.*
 
-This script pulls live in-mission weather data directly from the pilot's aircraft position and formats it ready to type straight into the CDU scratchpad — no math, no conversion needed.
-
 #### Features
 - Winds and temps at all 4 CDU altitude tiers (00, 02, 08, 26)
 - Wind output pre-formatted as 5-digit strings (e.g. `08001`)
