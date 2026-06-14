@@ -9,7 +9,8 @@ All scripts require the [MOOSE Framework](https://github.com/FlightControl-Maste
 
 ### 🛩️ LASTE Wind/Temp Correction — A-10C / A-10C II
 
-<img width="602" height="446" alt="A-10_laste" src="https://github.com/user-attachments/assets/b5642088-d42a-46d1-8412-c514674ad8f0" />
+<img width="602" height="464" alt="A-10_laste" src="https://github.com/user-attachments/assets/717ebe49-bb59-497f-95fe-f5d75359b653" />
+
 
 
 In an A-10 Thunderbolt II, LASTE stands for **Low Altitude Safety and Targeting Enhancement**.
