@@ -21,6 +21,8 @@
 -- Displays data via native DCS group text blocks for 5 
 -- minutes, with an on-demand option to clear the layout.
 -- Uses the MOOSE framework engine to handle weather tracking.
+-- MOOSE Framework: https://github.com/FlightControl-Master/MOOSE
+--
 --
 -- =======================================================
 -- MISSION EDITOR SETUP INSTRUCTIONS:
@@ -63,8 +65,8 @@ local function GetMagneticVariationString()
 
     if not ok or magVarDeg == nil then return "N/A" end
 
-    local direction = magVarDeg >= 0 and "E" or "W"
-    return string.format("%.1f%s", math.abs(magVarDeg), direction)
+    local sign = magVarDeg >= 0 and "+" or "-"
+    return string.format("%s%.1f deg", sign, math.abs(magVarDeg))
 end
 
 -- Function to fetch and display weather safely using native Group environment
@@ -79,8 +81,8 @@ local function ShowLasteToGroup(GroupName)
             local unitPos = dcsUnit:getPosition().p
             local PlayerPos = COORDINATE:NewFromVec3(unitPos)
             
-            -- The 4 valid distinct physical CDU entry tiers
-            local AltitudesFeet = {0, 2000, 8000, 26000}
+            -- The 5 valid distinct physical CDU entry tiers
+            local AltitudesFeet = {0, 1000, 2000, 8000, 26000}
             
             -- Fetch local sea-level barometric pressure (QNH) via native DCS atmosphere engine
             local sampleCoord = { x = unitPos.x, y = 0, z = unitPos.z }
@@ -112,15 +114,13 @@ local function ShowLasteToGroup(GroupName)
                 local WindKnots = math.floor(WindSpeedms * 1.94384)
                 local WindHeading = math.floor(WindDir)
                 
-                -- Format temperature for the CDU (Prefix with '-' if negative)
-                local TempStr = tostring(math.abs(TempC))
+                -- Format temperature for the CDU with consistent fixed-width alignment
+                -- Positive temps padded to 3 chars (e.g. " 20"), negatives keep minus sign (e.g. "-32")
+                local TempStr
                 if TempC < 0 then
-                    TempStr = "-" .. TempStr
-                end
-                
-                -- Single digit alignment handler to balance the visual space width of the minus sign
-                if TempC >= 0 and TempC < 10 then
-                    TempStr = " " .. TempStr
+                    TempStr = string.format("-%d", math.abs(TempC))
+                else
+                    TempStr = string.format("%3d", TempC)
                 end
                 
                 -- Format Wind Data string WITHOUT the slash (e.g., 08001)
@@ -129,6 +129,8 @@ local function ShowLasteToGroup(GroupName)
                 -- Calibrated space layouts tailored to offset proportional text drift perfectly
                 if AltFeet == 0 then
                     Message = Message .. string.format("0000 ft                00              %s             %s\n", WindString, TempStr)
+                elseif AltFeet == 1000 then
+                    Message = Message .. string.format("1000 ft                01              %s             %s\n", WindString, TempStr)
                 elseif AltFeet == 2000 then
                     Message = Message .. string.format("2000 ft                02              %s             %s\n", WindString, TempStr)
                 elseif AltFeet == 8000 then
@@ -141,7 +143,7 @@ local function ShowLasteToGroup(GroupName)
             Message = Message .. "---------------------------------------------------------\n\n"
             Message = Message .. "=== MANUAL DATA ENTRY STEPS ===\n"
             Message = Message .. "1. Turn Altimeter Pressure knob to match Ground QNH.\n"
-            Message = Message .. "2. Press [SYS] on CDU -> OSB 06 [LASTE] -> OSB 06 [WIND].\n"
+            Message = Message .. "2. Press [SYS] on CDU -> OSB 06 [LASTE] -> OSB 07 [WIND].\n"
             Message = Message .. "3. Select/Create Altitude Layer First:\n"
             Message = Message .. "   Type ALT value into scratchpad -> Press target ALT OSB.\n"
             Message = Message .. "4. Enter Layer Editing Mode:\n"
@@ -149,7 +151,7 @@ local function ShowLasteToGroup(GroupName)
             Message = Message .. "5. Input Target Data:\n"
             Message = Message .. "   Type Wind Entry (e.g. 08001) -> Press OSB 02 [WIND].\n"
             Message = Message .. "   Type Temp Entry (e.g. 19 or -32) -> Press OSB 03 [TEMP].\n"
-            Message = Message .. "6. Press [WP] then [STEERPOINT] to get back."
+            Message = Message .. "6. Press [WP] on the UFC to return to Steerpoint page."
             
             local groupID = dcsGroup:getID()
             trigger.action.outTextForGroup(groupID, "", 1, true)
