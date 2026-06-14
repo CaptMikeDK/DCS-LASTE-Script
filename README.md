@@ -13,6 +13,10 @@ All scripts require the [MOOSE Framework](https://github.com/FlightControl-Maste
 
 In an A-10 Thunderbolt II, LASTE stands for **Low Altitude Safety and Targeting Enhancement**.
 
+### LASTE is the system that makes low-level A-10 attacks accurate and survivable. It integrates ballistic computation, autopilot modes, and weapon delivery into a single system, using wind and temperature data across multiple altitude layers to calculate correct weapons impact points. Without it properly programmed, your bombs and rockets will not hit where your pipper says they will — this script makes sure you always have the right numbers before you roll in.
+
+* This script pulls live in-mission weather data directly from the pilot's aircraft position and formats it ready to type straight into the CDU scratchpad — no math, no conversion needed.*
+
 This script pulls live in-mission weather data directly from the pilot's aircraft position and formats it ready to type straight into the CDU scratchpad — no math, no conversion needed.
 
 #### Features
