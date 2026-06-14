@@ -1,6 +1,6 @@
 -- =======================================================
 -- SCRIPT: LASTE Wind/Temp Correction
--- VERSION: 14-06-2026 (ver. 1.2)
+-- VERSION: 14-06-2026 (ver. 1.1)
 -- SCRIPTED BY: CaptMike
 -- =======================================================
 -- DESCRIPTION:
