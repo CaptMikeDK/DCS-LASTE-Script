@@ -9,7 +9,7 @@ All scripts require the [MOOSE Framework](https://github.com/FlightControl-Maste
 
 ### 🛩️ LASTE Wind/Temp Correction — A-10C / A-10C II
 
-![LASTE Wind/Temp Correction Data](A-10_laste.jpg)
+<img width="624" height="468" alt="A-10_laste" src="https://github.com/user-attachments/assets/586f6955-1aaa-4ec1-9e4b-328644a05852" />
 
 **File:** `A10_laste_Winds_MP.lua`  
 **Version:** 1.3 | 14-06-2026  
