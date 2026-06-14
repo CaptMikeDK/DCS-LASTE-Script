@@ -37,6 +37,8 @@ This script pulls live in-mission weather data directly from the pilot's aircraf
 #### In-Game Usage
 `F10 Other` → `LASTE` → `Request LASTE Winds`
 
+![LASTE Wind/Temp Correction Data](A-10_laste.jpg)
+
 ---
 
 ## License
