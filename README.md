@@ -42,7 +42,7 @@ LASTE is the system that makes low-level A-10 attacks accurate and survivable. I
 `F10 Other` → `LASTE` → `Request LASTE Winds`
 
 > ⚠️ The F10 LASTE menu will only appear if you are seated in an **A-10C** or **A-10C II** aircraft slot.
-#### Setting QNH
+#### Setting the correct QNH
 
 <img width="602" height="446" alt="set_QNH" src="https://github.com/user-attachments/assets/fee1c4c6-ccf8-4b70-b357-22a198a648c5" />
 
