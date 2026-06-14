@@ -1,11 +1,6 @@
-# DCS Lua Scripts
+# DCS LASTE Script
 
-A collection of DCS World server-side Lua scripts built for multiplayer missions.  
-All scripts require the [MOOSE Framework](https://github.com/FlightControl-Master/MOOSE) — download it from the link before adding any script to your mission.
-
----
-
-## 📁 Scripts
+## 📁 Script
 
 ### 🛩️ LASTE Wind/Temp Correction — A-10C / A-10C II
 
