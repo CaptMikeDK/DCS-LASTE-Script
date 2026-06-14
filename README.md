@@ -38,7 +38,8 @@ This script pulls live in-mission weather data directly from the pilot's aircraf
 #### In-Game Usage
 `F10 Other` → `LASTE` → `Request LASTE Winds`
 
----
+> ⚠️ The F10 LASTE menu will only appear if you are seated in an **A-10C** or **A-10C II** aircraft slot.
+
 
 ## License
 
